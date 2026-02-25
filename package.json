@@ -1,0 +1,17 @@
+{
+  "name": "pqxdh",
+  "version": "0.1.0",
+  "description": "Post-Quantum Extended Diffie-Hellman protocol implementation.",
+  "homepage": "https://github.com/LookAtFr3sn0/pqxdh#readme",
+  "bugs": {
+    "url": "https://github.com/LookAtFr3sn0/pqxdh/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LookAtFr3sn0/pqxdh.git"
+  },
+  "license": "MIT",
+  "author": "LookAtFr3sn0",
+  "type": "module",
+  "main": "index.ts"
+}
