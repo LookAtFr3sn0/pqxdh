@@ -13,5 +13,11 @@
   "license": "MIT",
   "author": "LookAtFr3sn0",
   "type": "module",
-  "main": "index.ts"
+  "main": "index.ts",
+  "devDependencies": {
+    "@types/node": "^25.3.0",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.18"
+  }
 }
