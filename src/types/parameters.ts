@@ -4,6 +4,11 @@ export type info = string;
 export type pqkem = 'ML-KEM-512' | 'ML-KEM-768' | 'ML-KEM-1024';
 export type aead = 'AES-128-GCM' | 'AES-256-GCM' | 'ChaCha20-Poly1305';
 
+export type signature = {
+    type: 'Ed25519' | 'Ed448';
+    signature: Uint8Array;
+}
+
 export type Bundle = {
     IK: {
         type: curve;
@@ -13,13 +18,13 @@ export type Bundle = {
         id: number;
         type: curve;
         publicKey: Uint8Array;
-        signature: Uint8Array;
+        signature: signature;
     },
     lastResort: {
         id: number;
         type: pqkem;
         publicKey: Uint8Array;
-        signature: Uint8Array;
+        signature: signature;
     },
     oneTimeCurveKeys: Array<{
         id: number;
@@ -30,6 +35,6 @@ export type Bundle = {
         id: number;
         type: pqkem;
         publicKey: Uint8Array;
-        signature: Uint8Array;
+        signature: signature;
     }>
 }
