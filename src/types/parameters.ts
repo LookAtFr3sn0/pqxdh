@@ -9,7 +9,7 @@ export type signature = {
     signature: Uint8Array;
 }
 
-export type Bundle = {
+export type bundle = {
     IK: {
         type: curve;
         publicKey: Uint8Array;
