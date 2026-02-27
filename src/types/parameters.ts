@@ -20,18 +20,18 @@ export type bundle = {
         publicKey: Uint8Array;
         signature: signature;
     },
-    lastResort: {
+    PQSPK: {
         id: number;
         type: pqkem;
         publicKey: Uint8Array;
         signature: signature;
     },
-    oneTimeCurveKeys: Array<{
+    OPK: Array<{
         id: number;
         type: curve;
         publicKey: Uint8Array;
     }>,
-    oneTimePQKEMKeys: Array<{
+    PQOPK: Array<{
         id: number;
         type: pqkem;
         publicKey: Uint8Array;
